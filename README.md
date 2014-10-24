@@ -10,10 +10,12 @@ Requirements
 Python must be installed on the system. Either 2.7 or 3.4 will work.
 www.python.org/downloads
 
-AutoIT must be installed.
-https://www.autoitscript.com/site/autoit/downloads/
-AutoIT will not run correctly in Python until you install the appropriate Python Extension for Windows: http://sourceforge.net/projects/pywin32/
 
+Changelog
+================
+
+v1.00 - Initial release
+v1.10 - Removed AutoIT dependency; Speed is greatly increased.
 
 Use
 ================
@@ -28,4 +30,6 @@ Failed tests (the final URL does not match the expected URL) will be written to 
 
 Passed tests (final URL matches expected URL) will be written to <provided_file_name>_passed.txt in the same location as the provided file.
 
-Each URL will take 8.4 seconds to test.
+The tests will always wait for a response from the URL via a HEAD request. If this request times out, or produces an error, the test is marked as failed.
+
+A test of 1,500 URL's to a company site via a work network took approximately 4 minutes to complete.
