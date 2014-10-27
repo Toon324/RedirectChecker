@@ -11,11 +11,13 @@ Python must be installed on the system. Either 2.7 or 3.4 will work.
 www.python.org/downloads
 
 
-Changelog
-================
+#Changelog
+
+
+v1.10 - Removed AutoIT dependency; Speed is greatly increased.
 
 v1.00 - Initial release
-v1.10 - Removed AutoIT dependency; Speed is greatly increased.
+
 
 Use
 ================
